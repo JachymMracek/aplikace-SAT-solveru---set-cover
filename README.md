@@ -33,7 +33,7 @@
  #### k", type=int
  Maximální počet podmnožin, které splňují zadání. Program hledá řešení k = 1,...k. Pokud uživatel nastaví find_best na "yes", pak tento parametr nemá smysl.
   
- ####"header", type=str
+ #### "header", type=str
  Napsáním "yes" uživatel uvidí CNF formule, pokud napíše "no", pak se CNF formule nezobrazí na standartní výstup.
 
 ### ukázkový vstup (za default):
