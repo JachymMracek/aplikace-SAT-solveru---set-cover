@@ -1,23 +1,35 @@
 # aplikace-SAT-solveru SET COVER
 
 ## Použité technologie
- aplikace SAT solveru je naprogramována v jazyce Python s použitím SAT solveru Glucosce 4.2, kde jsou využity knihovny os, subprocess, itertools a argparse. Programu je určený pro operační systém Linux.
+ Aplikace SAT solveru je naprogramována v jazyce Python s použitím SAT solveru Glucosce 4.2, kde jsou využity knihovny os, subprocess, itertools a argparse. Programu je určený pro operační systém Linux.
 
  ### Použité knihovny
- #### import os - Pro nalezení glucose-syrup souboru.
- #### import subprocess - Knihovna, která zprostředkuje spuštění SAT solveru v Pythonu.
- #### from itertools import combinations - Pro vygenerování všech (or) klauzulí o velikosti k+1, kde proměnná k je popsáno na stánce zadání https://en.wikipedia.org/wiki/Set_cover_problem.
- #### import argparse - Knihovna pro umožnění uživatelovi zadat vstupní parametry
+ #### import os
+ Pro nalezení glucose-syrup souboru.
+ 
+ #### import subprocess
+ Knihovna, která zprostředkuje spuštění SAT solveru v Pythonu.
+ 
+ #### from itertools import combinations
+ Pro vygenerování všech klauzulí, které řeší 1 část CNF formule. (Popis níže)
+ 
+ #### import argparse
+ Knihovna pro umožnění uživatelovi zadat vstupní parametry.
  
  ## Popis zadání
  Aplikace dostane množina U, která obsahuje čísla 1 až n a vstupní množinu S, která obsahuje číselné podmnožiny. Úkolem aplikace je najít podmnožiny z S, takové aby pokrily všechny prvky v množině U aneb každý číselný prvek v U
  je alespoň v jedné podmnožině z podmnožin splňující zadání.
 
  ## Popis vstupních parametrů
- "n", type=int - číslo, které udává počet prvků v množině U, která obsahuje prvky 1 až n.
- "all_numbers_of_collection_set", type=str - String reprezentující množinu obsahující podmnožiny, kde prvky v podmnožině mohou obshaovat pouze čísla, které musejí být oddělené čárkou ",", a jednotlivé podmnožiny musejí
-                                             být ukončené středníkem (";")
-  "find_best", type=str - Uživatel si může zvolit zda chce najít nejlepší k nebo program spustit pro zadané k, pookud uživatel napíše "yes", pak aplikace hledá nejlepší k a nebere zřetel na zvolené k. Pokud uživatel nechce hledat nejlepší                               možnost, ať uživatel napíše "no".
+ #### "n", type=int
+ číslo, které udává počet prvků v množině U, která obsahuje prvky 1 až n.
+ 
+ #### "all_numbers_of_collection_set", type=str
+ String reprezentující množinu obsahující číselné podmnožiny, kde prvky v podmnožině mohou obshaovat pouze čísla, které musejí být oddělené čárkou ",", a jednotlivé podmnožiny musejí být ukončené středníkem (";"), tedy i poslední.
+ 
+ #### "find_best", type=str
+ Uživatel si může zvolit zda chce najít nejlepší k nebo program spustit pro zadané k, pookud uživatel napíše "yes", pak aplikace hledá nejlepší k a nebere zřetel na zvolené k. Pokud uživatel nechce hledat nejlepší                       
+ možnost, ať uživatel napíše "no".
 
   k", type=int - Maximální počet množin, kde program se snaží najít řešení odpovídající zadání. Program hledá řešení k = 1,...k. (Pokud uživatel nastaví best_solution = "yes", pak tento parametr nemá smysl)
   "header", type=str - Napsáním "yes" uživatel uvidí CNF formule, pokud napíše "no", pak se CNF formule nezobrazí na standartním výstupu.
