@@ -25,14 +25,16 @@
  číslo, které udává počet prvků v množině U, která obsahuje prvky 1 až n.
  
  #### "all_numbers_of_collection_set", type=str
- String reprezentující množinu obsahující číselné podmnožiny, kde prvky v podmnožině mohou obshaovat pouze čísla, které musejí být oddělené čárkou ",", a jednotlivé podmnožiny musejí být ukončené středníkem (";"), tedy i poslední.
+ String reprezentující množinu obsahující číselné podmnožiny, kde prvky v podmnožině mohou obshaovat pouze čísla, které musejí být oddělené čárkou (","), a jednotlivé podmnožiny musejí být ukončené středníkem (";"), tedy i poslední.
  
  #### "find_best", type=str
- Uživatel si může zvolit zda chce najít nejlepší k nebo program spustit pro zadané k, pookud uživatel napíše "yes", pak aplikace hledá nejlepší k a nebere zřetel na zvolené k. Pokud uživatel nechce hledat nejlepší                       
- možnost, ať uživatel napíše "no".
+ Uživatel si může zvolit zda chce najít nejlepší k nebo program spustit pro zadané k, pokud uživatel napíše "yes", pak aplikace hledá nejlepší k a nebere zřetel na zvolené k. Pokud uživatel nechce hledat nejlepší k, pak napište "no".
 
-  k", type=int - Maximální počet množin, kde program se snaží najít řešení odpovídající zadání. Program hledá řešení k = 1,...k. (Pokud uživatel nastaví best_solution = "yes", pak tento parametr nemá smysl)
-  "header", type=str - Napsáním "yes" uživatel uvidí CNF formule, pokud napíše "no", pak se CNF formule nezobrazí na standartním výstupu.
+ #### k", type=int
+ Maximální počet podmnožin, které splňují zadání. Program hledá řešení k = 1,...k. Pokud uživatel nastaví find_best na "yes", pak tento parametr nemá smysl.
+  
+ ####"header", type=str
+ Napsáním "yes" uživatel uvidí CNF formule, pokud napíše "no", pak se CNF formule nezobrazí na standartní výstup.
 
 ### ukázkový vstup (za default):
   parser.add_argument("n", type=int, nargs="?", default=5, help="Write count n of elements in universe")
