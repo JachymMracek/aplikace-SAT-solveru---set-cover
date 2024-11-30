@@ -1,17 +1,17 @@
-# aplikace-SAT-solveru---set-cover
+# aplikace-SAT-solveru SET COVER
 
 ## Použité technologie
- aplikace SAT solveru je naprogramována v jazyce Python s použitím SAT solveru Glucosce 4.2, kde jsou využity knihovny os,subprocess,itertools a argparse. Programu je určený pro operační systém Linux.
+ aplikace SAT solveru je naprogramována v jazyce Python s použitím SAT solveru Glucosce 4.2, kde jsou využity knihovny os, subprocess, itertools a argparse. Programu je určený pro operační systém Linux.
 
  ### Použité knihovny
- import os - Pro nalezení glucose-syrup souboru.
- import subprocess - Knihovna, která zprostředkuje spuštění SAT solveru v Pythonu.
- from itertools import combinations - Pro vygenerování všech (or) klauzulí o velikosti k+1, kde proměnná k je popsáno na stánce zadání https://en.wikipedia.org/wiki/Set_cover_problem.
- import argparse - Knihovna pro umožnění uživatelovi zadat vstupní parametry
+ #### import os - Pro nalezení glucose-syrup souboru.
+ #### import subprocess - Knihovna, která zprostředkuje spuštění SAT solveru v Pythonu.
+ #### from itertools import combinations - Pro vygenerování všech (or) klauzulí o velikosti k+1, kde proměnná k je popsáno na stánce zadání https://en.wikipedia.org/wiki/Set_cover_problem.
+ #### import argparse - Knihovna pro umožnění uživatelovi zadat vstupní parametry
  
  ## Popis zadání
- Vstupem aplikace je množina universe U, která obsahuje čísla 1 až n (včetně), kde program dostane n z vstupního řádku, a vstupní množina S, která obsahuje další podmnožiny. Úkolem aplikace je najít podmnožiny z S, takové aby
- pokrily všechny prvky v množině U.
+ Aplikace dostane množina U, která obsahuje čísla 1 až n a vstupní množinu S, která obsahuje číselné podmnožiny. Úkolem aplikace je najít podmnožiny z S, takové aby pokrily všechny prvky v množině U aneb každý číselný prvek v U
+ je alespoň v jedné podmnožině z podmnožin splňující zadání.
 
  ## Popis vstupních parametrů
  "n", type=int - číslo, které udává počet prvků v množině U, která obsahuje prvky 1 až n.
