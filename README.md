@@ -47,8 +47,10 @@
 CNF formuli jsme vytvořili ze 2 částí.
 
 ### první část
-Popisuje, že chceme aby byly vybrány právě k podmnožin z S, tak že vygenerujeme všechny klauzule ve tvaru ((not(s_1) or not(s_2) ... or not(s_k+1)), kde tyto klauzule jsou musí být všechny splněny, tedy musí platit claus_1 and claus_2 ...
-Tímto výrokem zařídíme, že SAT bude brát maximálně k podmnožin.
+Řeší podmnínku, která tvrdí, že musí být vybráno právě k podmnožin aneb nesmí být vybráno k+1 liboolných podmnožin. Náš výrok vyjádříme pomocí výroku: 
+\[
+\bigwedge_{\substack{I \subseteq \{1, \dots, n\} \\ |I| = k+1}} \left( \bigvee_{i \in I} \neg S_i \right)
+\]
 
 ### druhá část
 
