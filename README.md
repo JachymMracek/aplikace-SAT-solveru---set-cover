@@ -54,9 +54,11 @@ $$
 $$
 
 ### druhá část
+Každý prvek z U musí být v alespoň jedné podmnožině řešící naší úlohu. Řešíme výrokem:
 
-Druhá část řeší, aby sjednocení množin obsahovalo, všechny prvky v U, tedy každému prvku vytvoříme klauzuli, která obshauje s_i, takové které obshauje daný prvek, čímž vznikne výrok pro každý prvek ve tvaru s_i or s_j or ......
-Tyto všechny klazule musí platit a proto využíjeme konjunkci pro tyto klauzule
+$$
+\bigwedge_{u \in U} \left( \bigvee_{\substack{S \subseteq U \\ u \in S}} S \right)
+$$
 
 ### CNF
 
