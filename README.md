@@ -1,4 +1,4 @@
-# aplikace-SAT-solveru SET COVER
+# Aplikace-SAT-solveru SET COVER PROBLEM
 
 ## Použité technologie
  Aplikace SAT solveru je naprogramována v jazyce Python s použitím SAT solveru Glucosce 4.2, kde jsou využity knihovny os, subprocess, itertools a argparse. Programu je určený pro operační systém Linux.
