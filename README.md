@@ -43,7 +43,10 @@ python script přijímá pouze jeden argument z příkazové řádky, kterým je
 50000 1,2-50;51-50000; no 2 no
 
 ### Ukázkové spuštení na příkazové řádce
-py SAT_set_cover.py instance1.txt
+py SAT_set_cover_solution.py instance1.txt
+
+### Poznámka
+Nejspíše bude nutné zadat absolutní cestu glucose-syrup do příkazu glucose_path = os.path.expanduser("glucose-syrup") místo "glucose-syrup".
 
 ## Instance
 Jsou přiloženy instance v texttových souborech, kde instance1.txt až instance10.txt a wkipedie_instance.txt jsou splnitelné a instance unsatisfiable.txt je nesplnitelhá.
@@ -55,7 +58,7 @@ v popisu zadání.
 ### Nesplnitelná instance
 Je přiložena jedna nesplnitelná instance unsatisfiable.txt.
 
-### Instance, který běží dée než 10 sekund
+### Instance, který běží déle jak 10 sekund
 Příkladem je instance10.txt.
 
 $$ Soubory
