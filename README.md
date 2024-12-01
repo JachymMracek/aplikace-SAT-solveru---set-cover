@@ -69,7 +69,7 @@ Počet pokrívajících podmnožin může být maximálně k aneb počet vybran�
 
 $$
 \left(
-\bigwedge_{\substack{I \subseteq \{ \{1, \dots, |S|\} \} \\ |I| = k+1}}
+\bigwedge_{\substack{I \subseteq \{\{1, \dots, \{|S|\}\}\} \\ |I| = k+1}}
 \left(
 \bigvee_{i \in I} \neg S_i
 \right)
