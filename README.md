@@ -67,9 +67,15 @@ CNF formuli jsme vytvořili ze 2 částí.
 ### První část
 Počet pokrívajících podmnožin může být maximálně k aneb počet vybraných podmnožin nesmí obsahovat libovolnou k+1-tici. Řešíme výrokem:
 
-$$
-\left( \bigwedge_{\substack{I \subseteq \left\{1, \dots, \lvert S \rvert\right\} \\ \lvert I \rvert = k+1}} \left( \bigvee_{i \in I} \neg S_i \right) \right)
-$$
+$
+\left(
+\bigwedge_{\substack{I \subseteq \{ \{1, \dots, |S|\} \} \\ |I| = k+1}}
+\left(
+\bigvee_{i \in I} \neg S_i
+\right)
+\right)
+$
+
 
 ### Druhá část
 Každý prvek z U musí náležet alespoň jedné podmnožině  z množiny řešící naší úlohu. Řešíme výrokem:
