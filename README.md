@@ -86,11 +86,9 @@ Výstupem může být buď chybová hláška a nebo výsledek řešení naší �
 ### Chybný výstup
 Pokud užívatel zadá chybný vstup, dostaneme chybovou hlášku na standartní vástup s textem WRONG INPUT.
 
-###### .......................
 WRONG INPUT
 
 TIME IN SECONDS: 0.0
-###### .......................
 
 ### Úspěšný výstup
 Při úspšněm výstupu dostaneme seznam množin, které byly vybrány pro pokrytí množiny U s počtem vybraných podmnožin.
