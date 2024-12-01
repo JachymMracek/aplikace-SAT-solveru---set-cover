@@ -116,6 +116,6 @@ TIME IN SECONDS: 0.01
 ![](graph.png)
 
 Graf závislosti instance (která vždy obsahuje rovnoměrně rozdělené podmnožiny) na čase, kde si všiumněme zajímavého kolísání hodnot, kde naše funkce není pouze rostoucí s počtem zadaných podmnožin. Jednotlivé instance jsou v souborech
-instance1.txt až instance10.txt.
+instance1.txt až instance10.txt. Na ose y - jsou hondoty v sekundách.
 
                                           
