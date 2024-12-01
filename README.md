@@ -46,14 +46,14 @@
 ## Postup řešení
 CNF formuli jsme vytvořili ze 2 částí.
 
-### první část
+### První část
 Počet pokrívajících podmnožin může být maximálně k aneb počet pokrývajících podmnožin nesmí být k+1. Řešíme výrokem:
 
 $$
 \bigwedge_{\substack{I \subseteq \{1, \dots, n\} \\ |I| = k+1}} \left( \bigvee_{i \in I} \neg S_i \right)
 $$
 
-### druhá část
+### Druhá část
 Každý prvek z U musí náležet alespoň jedné podmnožině  z množiny řešící naší úlohu. Řešíme výrokem:
 
 $$
