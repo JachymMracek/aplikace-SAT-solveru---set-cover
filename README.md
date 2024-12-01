@@ -55,9 +55,11 @@ v popisu zadání.
 ### Nesplnitelná instance
 Je přiložena jedna nesplnitelná instance unsatisfiable.txt.
 
-### Inństance, který běží dée než 10 sekund
+### Instance, který běží dée než 10 sekund
 Příkladem je instance10.txt.
 
+$$ Soubory
+krom instancí, repozitář obsahuje konkretní python soubor set_cover.py, CNF_set_cover zakodovaný soubor a glucosce-syrup soubor.
 
 ## Postup řešení
 CNF formuli jsme vytvořili ze 2 částí.
