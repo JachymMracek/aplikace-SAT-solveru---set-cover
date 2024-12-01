@@ -65,7 +65,7 @@ $$
 $$
 
 
-## Output
+## Výstup
 Výstupem můžr být buď chybná chybová hláška a nebo výsledek řešení naší úlohy.
 
 ### Chybný výstup
