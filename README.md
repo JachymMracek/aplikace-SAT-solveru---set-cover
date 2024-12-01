@@ -47,7 +47,7 @@
 CNF formuli jsme vytvořili ze 2 částí.
 
 ### první část
-Počet pokrívajících podmnožin může být maximálně k aneb počet pokrývajících řešení nesmí být k+1. Řešíme výrokem:
+Počet pokrívajících podmnožin může být maximálně k aneb počet pokrývajících podmnožin nesmí být k+1. Řešíme výrokem:
 
 $$
 \bigwedge_{\substack{I \subseteq \{1, \dots, n\} \\ |I| = k+1}} \left( \bigvee_{i \in I} \neg S_i \right)
