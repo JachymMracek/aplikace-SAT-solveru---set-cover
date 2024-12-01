@@ -20,34 +20,40 @@
  Aplikace dostane množina U, která obsahuje čísla 1 až n a vstupní množinu S, která obsahuje číselné podmnožiny. Úkolem aplikace je najít podmnožiny z S, takové aby pokrily všechny prvky v množině U aneb každý číselný prvek v U
  je alespoň v jedné podmnožině z podmnožin splňující zadání. Podrobné zadání: https://en.wikipedia.org/wiki/Set_cover_problem
 
- ## Popis vstupních parametrů
- #### "n", type=int
+## Popis parametrů
+python script přijímá pouze jeden argument z příkazové řádky, kterým je jméno souboru ve kterém jsou uložené příslušné parametry.
+
+ ### Popis vstupních parametrů v souboru
+ #### "n"
  číslo, které udává počet prvků v množině U, která obsahuje prvky 1 až n.
  
- #### "all_numbers_of_collection_set", type=str
- String reprezentující množinu obsahující číselné podmnožiny, kde prvky v podmnožině mohou obshaovat pouze čísla, které musejí být oddělené čárkou (","), a jednotlivé podmnožiny musejí být ukončené středníkem (";"), tedy i poslední.
+ "subsets"
+ String reprezentující množinu obsahující číselné podmnožiny, kde prvky v podmnožině mohou obsahaovat pouze čísla, které musejí být oddělené čárkou (",") nebo pomlčkou ("-"), která určuje rozsah platných čísel v podmnožině. Jednotlivé podmnožiny musejí být ukončené středníkem (";"), tedy i poslední. Prázdná množina v našem případě je brána, jako chybný vstup, jelikož nemá žádný vliv na naší úlohu.
  
- #### "find_best", type=str
+ #### "find_best"
  Uživatel si může zvolit zda chce najít nejlepší k nebo program spustit pro zadané k, pokud uživatel napíše "yes", pak aplikace hledá nejlepší k a nebere zřetel na zvolené k. Pokud uživatel nechce hledat nejlepší k, pak napište "no".
 
- #### "k", type=int
- Maximální počet podmnožin, které splňují zadání. Program hledá řešení k = 1,...k. Pokud uživatel nastaví find_best na "yes", pak tento parametr nemá smysl.
+ #### "k"
+ Maximální počet podmnožin, které splňují zadání. Program hledá splnitelné řešení pro k = 1,...k. Pokud uživatel nastaví find_best na "yes", pak tento parametr nemá význam v aplikaci.
   
- #### "header", type=str
+ #### "header"
  Napsáním "yes" uživatel uvidí CNF formule, pokud napíše "no", pak se CNF formule nezobrazí na standartní výstup.
 
-### Ukázkový vstup
-py SAT_set_cover.py 10 "1;2;3;4;5;6;7;8;9;10;" yes 5 no
+### Ukázkový vstup v souboru
+50000 1,2-50;51-50000; no 2 no
+
+### Ukázkové spuštení na příkazové řádce
+py SAT_set_cover.py instance1.txt
 
 ## Instance
-Jsou přiloženy instance v texttových souborech, které obsahují vstupní argumenty. Instanci lze spustit pomocí předání souboru py skriptu a nebo předat parametry přímo do cmd (Jak ukazuji v ukázkovém vstupu).
+Jsou přiloženy instance v texttových souborech, kde instance1.txt až instance10.txt a wkipedie_instance.txt jsou splnitelné a instance unsatisfiable.txt je nesplnitelhá.
 
 ### Splnitelné instance
-Jsou přiloženy instance 1 až 10 (instace1.txt až instace10.txt), které jsou splnitelné a také slouží k měření času naší aplikace. (viz experiment část). A také je přiložená splnitelná wikipedie_instance.txt ze zdroje napsaný
+Jsou přiloženy instance 1 až 10 (instace1.txt až instace10.txt), které jsou splnitelné a také slouží k měření času naší aplikace. (viz experiment část). A také je přiložená splnitelná wikipedie_instance.txt z wikipedie zdroje napsaný
 v popisu zadání.
 
 ### Nesplnitelná instance
-Je přiložena jedna nesplnitelná instance unsatisfiable_instance.txt.
+Je přiložena jedna nesplnitelná instance unsatisfiable.txt.
 
 ## Postup řešení
 CNF formuli jsme vytvořili ze 2 částí.
@@ -75,14 +81,16 @@ $$
 
 
 ## Výstup
-Výstupem můžr být buď chybná chybová hláška a nebo výsledek řešení naší úlohy.
+Výstupem může být buď chybová hláška a nebo výsledek řešení naší úlohy. Nezávisle na případu  uživatel na výstup dostane čás běhu programu, kde celá výstupová zpráva je ohraničena pomlčkami.
 
 ### Chybný výstup
-Pokud užívatel zadá chybný vstup, dostaneme chybovou hlášku na standartní vástup s textem WRONG INPUT
+Pokud užívatel zadá chybný vstup, dostaneme chybovou hlášku na standartní vástup s textem WRONG INPUT.
 
-### Výsledek úlohy
+### Úspěšný výstup
+Při úspšněm výstupu dostaneme seznam množin, které byly vybrány pro pokrytí množiny U s počtem vybraných podmnožin.
 
-
+### Neúspěšný výstup
+Pokud nelze najít řešení splňující zadání, uživatel dostane na výstup text NO SOLUTION FOR THIS TASK!!!
 
 
                                           
