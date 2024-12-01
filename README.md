@@ -65,7 +65,7 @@ Příkladem je instance10.txt.
 CNF formuli jsme vytvořili ze 2 částí.
 
 ### První část
-Počet pokrívajících podmnožin může být maximálně k aneb počet vybraných podmnožin nesmí být  libovolná k+1 - tice. Řešíme výrokem:
+Počet pokrívajících podmnožin může být maximálně k aneb počet vybraných podmnožin nesmí obsahovat libovolnou k+1-tici. Řešíme výrokem:
 
 $$
 \left( \bigwedge_{\substack{I \subseteq \{1, \dots, n\} \\ |I| = k+1}} \left( \bigvee_{i \in I} \neg S_i \right) \right)
