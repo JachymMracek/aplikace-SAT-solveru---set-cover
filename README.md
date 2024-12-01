@@ -46,12 +46,15 @@
 ## Postup řešení
 CNF formuli jsme vytvořili ze 2 částí.
 
-### první část
-Řeší podmnínku, která tvrdí, že musí být vybráno právě k podmnožin aneb nesmí být vybráno k+1 liboolných podmnožin. Náš výrok vyjádříme pomocí výroku: 
+### Podmínka výběru
+
+Pro zajištění, že nebude vybráno více než \( k \) podmnožin, musí být splněna následující podmínka. Tato podmínka vyžaduje, aby nebylo možné vybrat libovolných \( k+1 \) prvků z množiny \( n \) prvků:
 
 \[
 \bigwedge_{\substack{I \subseteq \{1, \dots, n\} \\ |I| = k+1}} \left( \bigvee_{i \in I} \neg S_i \right)
 \]
+
+V tomto výrazu, \( \bigwedge \) symbolizuje logickou operaci AND použitou na všechny kombinace podmnožin o velikosti \( k+1 \), zatímco \( \bigvee \) symbolizuje logickou operaci OR použitou na negace jednotlivých prvků těchto podmnožin. Tímto způsobem zaručujeme, že neexistuje žádná kombinace \( k+1 \) prvků, která by byla současně vybrána.
 
 ### druhá část
 
