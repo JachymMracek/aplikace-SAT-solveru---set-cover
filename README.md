@@ -71,7 +71,7 @@ Výstupem můžr být buď chybná chybová hláška a nebo výsledek řešení 
 ### Chybný výstup
 Pokud užívatel zadá chybný vstup, dostaneme chybovou hlášku na standartní vástup s textem WRONG INPUT
 
-### Výsledek řešení
+### Výsledek úlohy
 
 
 
