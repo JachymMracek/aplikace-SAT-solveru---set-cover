@@ -54,7 +54,7 @@ $$
 $$
 
 ### druhá část
-Každý prvek z U musí být v alespoň jedné podmnožině řešící naší úlohu. Řešíme výrokem:
+Každý prvek z U musí být v alespoň jedné podmnožině množiny řešící naší úlohu. Řešíme výrokem:
 
 $$
 \bigwedge_{u \in U} \left( \bigvee_{\substack{S \subseteq U \\ u \in S}} S \right)
