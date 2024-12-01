@@ -54,15 +54,19 @@ $$
 $$
 
 ### druhá část
-Každý prvek z U musí být v alespoň jedné podmnožině množiny řešící naší úlohu. Řešíme výrokem:
+Každý prvek z U musí náležet alespoň jedné podmnožině  z množiny řešící naší úlohu. Řešíme výrokem:
 
 $$
 \bigwedge_{u \in U} \left( \bigvee_{\substack{S \subseteq U \\ u \in S}} S \right)
 $$
 
-### CNF
+### CNF formule
+Konjunkcí našich výroků dostáváme finální výrok:
 
-Naše finalní klauzule je první část and druhá část.
+\[
+\left( \bigwedge_{\substack{I \subseteq \{1, \dots, n\} \\ |I| = k+1}} \left( \bigvee_{i \in I} \neg S_i \right) \right) \wedge \left( \bigwedge_{u \in U} \left( \bigvee_{\substack{S \subseteq U \\ u \in S}} S \right) \right)
+\]
+
 
 ## Output
 
