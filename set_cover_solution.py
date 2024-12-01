@@ -178,6 +178,7 @@ def show_solution(SAT_solution,S,k,U):
 def start_program(S,find_best,header,k):
 
     tries = get_tries(S,find_best,k)
+    k = 1
 
     while tries > 0:
 
