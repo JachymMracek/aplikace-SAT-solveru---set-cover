@@ -48,6 +48,7 @@ CNF formuli jsme vytvořili ze 2 částí.
 
 ### první část
 Řeší podmnínku, která tvrdí, že musí být vybráno právě k podmnožin aneb nesmí být vybráno k+1 liboolných podmnožin. Náš výrok vyjádříme pomocí výroku: 
+
 \[
 \bigwedge_{\substack{I \subseteq \{1, \dots, n\} \\ |I| = k+1}} \left( \bigvee_{i \in I} \neg S_i \right)
 \]
