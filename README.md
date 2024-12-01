@@ -37,11 +37,8 @@
  Napsáním "yes" uživatel uvidí CNF formule, pokud napíše "no", pak se CNF formule nezobrazí na standartní výstup.
 
 ### Ukázkový vstup
-  parser.add_argument("n", type=int, nargs="?", default=5, help="Write count n of elements in universe")
-  parser.add_argument("all_numbers_of_collection_set", type=str, nargs="*", default="1,2,3;2,4;3,4;4,5;",help="Write lined up all numbers in collection where each set ends with ;")
-  parser.add_argument("find_best", type=str, nargs="?", default="no", help="Do you want find best k? (write:yes) or (write:no)")
-  parser.add_argument("k", type=int, nargs="?", default="2", help="Write count of sets which should cover universe.")
-  parser.add_argument("header", type=str, nargs="?", default="no", help="Do you want CNF formula and statistics during SAT solving?(yes/no)")
+python SAT_set_cover.py 10 "1;2;3;4;5;6;7;8;9;10;" yes 5 no
+
 
 ## Postup řešení
 CNF formuli jsme vytvořili ze 2 částí.
