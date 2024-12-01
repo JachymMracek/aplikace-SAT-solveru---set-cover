@@ -106,4 +106,7 @@ NO SOLUTION FOR THIS TASK!!!
 
 TIME IN SECONDS: 0.01
 
+## Experiment
+![](graph.png)
+
                                           
