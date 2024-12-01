@@ -37,10 +37,17 @@
  Napsáním "yes" uživatel uvidí CNF formule, pokud napíše "no", pak se CNF formule nezobrazí na standartní výstup.
 
 ### Ukázkový vstup
-SAT_set_cover_problem.py < wikipedie_instance.txt
+py SAT_set_cover.py 10 "1;2;3;4;5;6;7;8;9;10;" yes 5 no
 
-kde wikipedie_instance.txt obsahuje: python SAT_set_cover.py 10 "1;2;3;4;5;6;7;8;9;10;" yes 5 no
+## Instance
+Jsou přiloženy instance v texttových souborech, které obsahují vstupní argumenty. Instanci lze spustit pomocí předání souboru py skriptu a nebo předat parametry přímo do cmd (Jak ukazuji v ukázkovém vstupu).
 
+### Splnitelné instance
+Jsou přiloženy instance 1 až 10 (instace1.txt až instace10.txt), které jsou splnitelné a také slouží k měření času naší aplikace. (viz experiment část). A také je přiložená splnitelná wikipedie_instance.txt ze zdroje napsaný
+v popisu zadání.
+
+### Nesplnitelná instance
+Je přiložena jedna nesplnitelná instance unsatisfiable_instance.txt.
 
 ## Postup řešení
 CNF formuli jsme vytvořili ze 2 částí.
