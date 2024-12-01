@@ -57,7 +57,7 @@ $$
 Každý prvek z U musí náležet alespoň jedné podmnožině  z množiny řešící naší úlohu. Řešíme výrokem:
 
 $$
-\bigwedge_{u \in U} \left( \bigvee_{\substack{S \subseteq U \\ u \in S}} S \right)
+\bigvee_{u \subseteq U, u \in S_i, S \subseteq S_i} S_i
 $$
 
 ### CNF formule
