@@ -66,9 +66,12 @@ $$
 
 
 ## Output
+Výstupem můžr být buď chybná chybová hláška a nebo výsledek řešení naší úlohy.
 
-Outputem je buď chybová hláška WRONG INPUT, což znamená, že byly zadány chybné vstupní parametry. A nebo vypsané jednotlivé podmožiny, které pokrývají universe množinu + Zobrazená množina U + k pro které platí řešení. Ukázkovým výstupem
-je:
+### Chybný výstup
+Pokud užívatel zadá chybný vstup, dostaneme chybovou hlášku na standartní vástup s textem WRONG INPUT
+
+### Výsledek řešení
 
 
 
