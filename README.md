@@ -55,6 +55,10 @@ v popisu zadání.
 ### Nesplnitelná instance
 Je přiložena jedna nesplnitelná instance unsatisfiable.txt.
 
+### Inństance, který běží dée než 10 sekund
+Příkladem je instance10.txt.
+
+
 ## Postup řešení
 CNF formuli jsme vytvořili ze 2 částí.
 
