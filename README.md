@@ -68,7 +68,7 @@ CNF formuli jsme vytvořili ze 2 částí.
 Počet pokrívajících podmnožin může být maximálně k aneb počet vybraných podmnožin nesmí obsahovat libovolnou k+1-tici. Řešíme výrokem:
 
 $$
-\left( \bigwedge_{\substack{I \subseteq \{{1, \dots, \lvert S \rvert\}} \\ |I| = k+1}} \left( \bigvee_{i \in I} \neg S_i \right) \right)
+\left( \bigwedge_{\substack{I \subseteq \\left\{1, \dots, \lvert S \rvert\right\} \quad \left|I\right| = k+1 \left( \bigvee_{i \in I} \neg S_i \right) \right)
 $$
 
 ### Druhá část
