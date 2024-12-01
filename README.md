@@ -93,22 +93,17 @@ TIME IN SECONDS: 0.0
 ### Úspěšný výstup
 Při úspšněm výstupu dostaneme seznam množin, které byly vybrány pro pokrytí množiny U s počtem vybraných podmnožin.
 
-..............................
 SELECTED SUBSETS: { S_1 S_4 }
 
 COUNT OF SUBSETS 2
 
 TIME IN SECONDS: 0.01
-.............................
 
 ### Neúspěšný výstup
 Pokud nelze najít řešení splňující zadání, uživatel dostane na výstup text NO SOLUTION FOR THIS TASK!!!
 
-...............................
 NO SOLUTION FOR THIS TASK!!!
 
 TIME IN SECONDS: 0.01
-..............................
-
 
                                           
