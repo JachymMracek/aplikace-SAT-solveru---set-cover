@@ -18,7 +18,7 @@
  
  ## Popis zadání
  Aplikace dostane množina U, která obsahuje čísla 1 až n a vstupní množinu S, která obsahuje číselné podmnožiny. Úkolem aplikace je najít podmnožiny z S, takové aby pokrily všechny prvky v množině U aneb každý číselný prvek v U
- je alespoň v jedné podmnožině z podmnožin splňující zadání.
+ je alespoň v jedné podmnožině z podmnožin splňující zadání. Podrobné zadání: https://en.wikipedia.org/wiki/Set_cover_problem
 
  ## Popis vstupních parametrů
  #### "n", type=int
