@@ -39,7 +39,7 @@
 ### Ukázkový vstup
 SAT_set_cover_problem.py < wikipedie_instance.txt
 
-kde wikipedie instance obsahuje: python SAT_set_cover.py 10 "1;2;3;4;5;6;7;8;9;10;" yes 5 no
+kde wikipedie_instance.txt obsahuje: python SAT_set_cover.py 10 "1;2;3;4;5;6;7;8;9;10;" yes 5 no
 
 
 ## Postup řešení
