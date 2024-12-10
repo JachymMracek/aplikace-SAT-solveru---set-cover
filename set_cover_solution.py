@@ -184,7 +184,7 @@ def show_solution(SAT_solution,S,k,U):
 
     print(f"SELECTED SUBSETS: " '{ ' + ' '.join(subsets_tag[i-1] for i in indices_chosen) + ' }')
     print("")
-    print("COUNT OF SUBSETS " + str(k))
+    print("COUNT OF SUBSETS: " + str(k))
 
 
 def start_program(S,find_best,header,k):
