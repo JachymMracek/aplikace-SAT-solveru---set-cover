@@ -29,12 +29,12 @@ python script přijímá pouze jeden argument z příkazové řádky, kterým je
  
  #### "subsets"
  String reprezentující množinu obsahující číselné podmnožiny, kde prvky v podmnožině mohou obsahovat pouze čísla, které musejí být oddělené čárkou (",") nebo pomlčkou ("-"), která určuje rozsah platných čísel v podmnožině. Jednotlivé podmnožiny musejí být ukončené středníkem (";"), tedy i poslední. Prázdná množina v našem případě je brána, jako chybný vstup, jelikož nemá žádný vliv na naší úlohu.
+
+  #### "k"
+ Maximální počet podmnožin, které splňují zadání. Program hledá splnitelné řešení pro 1,...k. Pokud uživatel nastaví find_best na "yes", pak tento parametr nemá význam v aplikaci.
  
  #### "find_best"
  Uživatel si může zvolit zda chce najít nejlepší k nebo program spustit pro zadané k, pokud uživatel napíše "yes", pak aplikace hledá nejlepší k a nebere zřetel na zvolené k. Pokud uživatel nechce hledat nejlepší k, pak napište "no".
-
- #### "k"
- Maximální počet podmnožin, které splňují zadání. Program hledá splnitelné řešení pro k = 1,...k. Pokud uživatel nastaví find_best na "yes", pak tento parametr nemá význam v aplikaci.
   
  #### "header"
  Napsáním "yes" uživatel uvidí CNF formule a statistiky výpočtu SAT solveru, pokud napíše "no", pak se CNF formule nezobrazí na standartní výstup.
