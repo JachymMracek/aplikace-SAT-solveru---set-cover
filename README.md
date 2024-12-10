@@ -58,7 +58,7 @@ v popisu zadání.
 ### Nesplnitelná instance
 Je přiložena jedna nesplnitelná instance unsatisfiable.txt.
 
-### Instance, který běží déle jak 10 sekund
+### Instance ( > 10 sekund )
 Příkladem je instance10.txt.
 
 ## Postup řešení
