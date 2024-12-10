@@ -49,7 +49,7 @@ python3 SAT_set_cover_solution.py instance1.txt
 Nejspíše bude nutné zadat absolutní cestu glucose-syrup do příkazu glucose_path = os.path.expanduser("glucose-syrup") místo "glucose-syrup".
 
 ## Instance
-Jsou přiloženy instance v textových souborech, kde instance1.txt až instance10.txt a wkipedie_instance.txt jsou splnitelné a instance unsatisfiable.txt je nesplnitelhá.
+Jsou přiloženy instance v textových souborech, kde instance1.txt až instance10.txt a wkipedie_instance.txt jsou splnitelné a instance unsatisfiable.txt je nesplnitelná.
 
 ### Splnitelné instance
 Jsou přiloženy instance 1 až 10 (instace1.txt až instace10.txt), které jsou splnitelné a také slouží k měření času naší aplikace. (viz experiment část). A také je přiložená splnitelná wikipedie_instance.txt z wikipedie zdroje napsaný
