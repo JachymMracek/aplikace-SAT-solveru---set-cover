@@ -104,7 +104,7 @@ TIME IN SECONDS: 0.0
 ### Úspěšný výstup
 Při úspšněm výstupu dostaneme seznam množin, které byly vybrány pro pokrytí množiny U s počtem vybraných podmnožin.
 
-SELECTED SUBSETS: { S_1 S_4 }
+SELECTED SUBSETS: { S_1 S_4 } Kde S_i jsou množiny ve tvaru zadané ve vstupním souboru. Příkladem uveďme S_1 je {1,2;} a S_2 je {3-5;} pak výsledkem je { 1,2; 3-5; }
 
 COUNT OF SUBSETS 2
 
