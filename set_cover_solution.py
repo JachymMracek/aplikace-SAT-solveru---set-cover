@@ -14,6 +14,7 @@ semi_column = ";"
 empty = ""
 no_const = "no"
 yes_const = "yes"
+subsets_tag = []
 
 def get_evalution_of_variable(SAT_solver_solution):
 
@@ -26,12 +27,16 @@ def is_solveable(SAT_solver_solution):
     else:
         return False
 
-def SAT_solver_work(CNF_file):
+def SAT_solver_work(CNF_file,header):
 
-    glucose_path = os.path.expanduser("glucose-syrup")
-    SAT_solver_solution = subprocess.run([glucose_path, '-model', CNF_file], capture_output=True, text=True).stdout.splitlines()[-1]
+    glucose_path = os.path.expanduser('/home/liveuser/aplikace-SAT-solveru---set-cover/glucose-syrup')
+    
+    SAT_solver_solution = subprocess.run([glucose_path, '-model', CNF_file], capture_output=True, text=True).stdout.splitlines()
+    
+    if header == yes_const:
+        print(SAT_solver_solution)
 
-    return SAT_solver_solution
+    return SAT_solver_solution[-1]
 
 def make_file_for_SAT(count_of_sub_sets, count_of_CNF_clauses,CNF,header):
 
@@ -79,12 +84,12 @@ def clauses_for_each_universe_num(n, S):
     return each_number_clauses
 
 def clauses_for_max_k(count_of_sizes, k):
-
     max_k_clauses = [[-sub_set_value for sub_set_value in sets] for sets in combinations(range(1, count_of_sizes + 1), k + 1)]
 
     return max_k_clauses
 
 def define_sets(n, all_numbers_of_collection_set):
+
     try:
         
         U = list(range(1, n + 1))
@@ -92,6 +97,7 @@ def define_sets(n, all_numbers_of_collection_set):
         sub_set = []
         num = ""
         lastNum = 0
+        sub_set_tag = ""
 
         range_v = False
         for char in all_numbers_of_collection_set:
@@ -102,6 +108,7 @@ def define_sets(n, all_numbers_of_collection_set):
                     for i in range(int(lastNum),int(num)):sub_set.append(i)
 
                 sub_set.append(int(num))
+                sub_set_tag += char
                 lastNum = num
                 num = ""
                 range_v = False
@@ -113,19 +120,24 @@ def define_sets(n, all_numbers_of_collection_set):
 
                 sub_set.append(int(num))
                 S.append(sub_set)
+                sub_set_tag += char
+                subsets_tag.append(sub_set_tag)
 
                 sub_set = []
                 lastNum = num
                 num = ""
+                sub_set_tag = ""
                 range_v = False
 
             elif char == "-":
                 lastNum = int(num)
                 num = ""
                 range_v = True
+                sub_set_tag += char
             
             else:
                 num += char
+                sub_set_tag += char
 
         return U, S,False
     
@@ -170,7 +182,7 @@ def show_solution(SAT_solution,S,k,U):
 
     indices_chosen = [i for i in SAT_solution if i > 0]
 
-    print("SELECTED SUBSETS: { " + " ".join(f"S_{index}" for index in indices_chosen) + " }")
+    print(f"SELECTED SUBSETS: " '{ ' + ' '.join(subsets_tag[i-1] for i in indices_chosen) + ' }')
     print("")
     print("COUNT OF SUBSETS " + str(k))
 
@@ -190,7 +202,7 @@ def start_program(S,find_best,header,k):
         CNF = CNF_formula(clauses_max_k, clauses_each_num_U)
         CNF_file = make_file_for_SAT(len(S),len(CNF),CNF,header)
 
-        SAT_result = SAT_solver_work(CNF_file)
+        SAT_result = SAT_solver_work(CNF_file,header)
         find_solution = is_solveable(SAT_result)
 
         if find_solution:
