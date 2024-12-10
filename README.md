@@ -37,7 +37,7 @@ python script přijímá pouze jeden argument z příkazové řádky, kterým je
  Maximální počet podmnožin, které splňují zadání. Program hledá splnitelné řešení pro k = 1,...k. Pokud uživatel nastaví find_best na "yes", pak tento parametr nemá význam v aplikaci.
   
  #### "header"
- Napsáním "yes" uživatel uvidí CNF formule, pokud napíše "no", pak se CNF formule nezobrazí na standartní výstup.
+ Napsáním "yes" uživatel uvidí CNF formule a statistiky výpočtu SAT solveru, pokud napíše "no", pak se CNF formule nezobrazí na standartní výstup.
 
 ### Ukázkový vstup v souboru
 50000 1,2-50;51-50000; no 2 no
