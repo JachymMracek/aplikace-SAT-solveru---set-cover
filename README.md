@@ -43,7 +43,7 @@ python script přijímá pouze jeden argument z příkazové řádky, kterým je
 50000 1,2-50;51-50000; no 2 no
 
 ### Ukázkové spuštení na příkazové řádce
-py SAT_set_cover_solution.py instance1.txt
+python3 SAT_set_cover_solution.py instance1.txt
 
 ### Poznámka
 Nejspíše bude nutné zadat absolutní cestu glucose-syrup do příkazu glucose_path = os.path.expanduser("glucose-syrup") místo "glucose-syrup".
