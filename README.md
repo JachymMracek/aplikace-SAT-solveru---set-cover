@@ -21,7 +21,7 @@
  je alespoň v jedné podmnožině z podmnožin splňující zadání. Podrobné zadání: https://en.wikipedia.org/wiki/Set_cover_problem
 
 ## Popis parametrů
-python script přijímá pouze jeden argument z příkazové řádky, kterým je jméno souboru ve kterém jsou uložené příslušné parametry.
+python script přijímá pouze jeden argument z příkazové řádky, kterým je jméno souboru ve kterém jsou uložené příslušné parametry oddělené jednou mezerou.
 
  ### Popis vstupních parametrů v souboru
  #### "n"
