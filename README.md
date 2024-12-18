@@ -123,6 +123,6 @@ TIME IN SECONDS: 0.01
 ## Experiment
 ![](graph.png)
 
-Graf závislosti počtu vybraných podmnožin instancí instance1.txt až instance10.txt (kde instance mají podmnožiny rozdelené rovnoměrné) na čase. Kde hodnoty na ose y jsou v sekundách a zaokrouhleny na celé číslo.
+Graf závislosti počtu vybraných podmnožin instancí instance1.txt až instance10.txt (kde instance mají podmnožiny rozdelené rovnoměrné) na čase. Kde hodnoty na ose y jsou v sekundách a zaokrouhleny na celé čísla.
 
                                           
