@@ -123,6 +123,6 @@ TIME IN SECONDS: 0.01
 ## Experiment
 ![](graph.png)
 
-Graf závislosti počtu vybraných podmnožin instancí instace1.txt až instance10.txt (kde instance mají podmnožiny rozdelené rovnoměrné) na čase. Všimněme si, že našich instancích je grafem lineární křivka.
+Graf závislosti počtu vybraných podmnožin instancí instace1.txt až instance10.txt (kde instance mají podmnožiny rozdelené rovnoměrné) na čase.
 
                                           
