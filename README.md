@@ -123,6 +123,6 @@ TIME IN SECONDS: 0.01
 ## Experiment
 ![](graph.png)
 
-Graf závislosti počtu vybraných podmnožin instancí instace1.txt až instance10.txt, kde instance mají podmnožiny rozdelené rovnoměrné, na čase. Všimněme si zajímavého kolísání hodnot, kde naše funkce není pouze rostoucí s počtem zadaných podmnožin. Na ose y - jsou hondoty v sekundách a na ose x je počet podmnožin v našich souborech.
+Graf závislosti počtu vybraných podmnožin instancí instace1.txt až instance10.txt (kde instance mají podmnožiny rozdelené rovnoměrné) na čase. Všimněme si, že našich instancích je grafem lineární křivka.
 
                                           
