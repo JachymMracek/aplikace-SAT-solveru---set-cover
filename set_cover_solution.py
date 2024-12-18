@@ -10,11 +10,12 @@ parser.add_argument("input_file", type=str, nargs="?", default="instance1.txt", 
 args = parser.parse_args()
 
 comma =","
-semi_column = ";" 
+semi_column = ";"
 empty = ""
 no_const = "no"
 yes_const = "yes"
 subsets_tag = []
+statistics = "no"
 
 def get_evalution_of_variable(SAT_solver_solution):
 
@@ -30,10 +31,10 @@ def is_solveable(SAT_solver_solution):
 def SAT_solver_work(CNF_file,header):
 
     glucose_path = os.path.expanduser('/home/liveuser/aplikace-SAT-solveru---set-cover/glucose-syrup')
-    
+   
     SAT_solver_solution = subprocess.run([glucose_path, '-model', CNF_file], capture_output=True, text=True).stdout.splitlines()
-    
-    if header == yes_const:
+   
+    if statistics == yes_const:
         print(SAT_solver_solution)
 
     return SAT_solver_solution[-1]
@@ -46,7 +47,7 @@ def make_file_for_SAT(count_of_sub_sets, count_of_CNF_clauses,CNF,header):
 
         if header ==yes_const: print("p cnf {} {}\n".format(count_of_sub_sets, count_of_CNF_clauses))
 
-        file.write("p cnf {} {}\n".format(count_of_sub_sets, count_of_CNF_clauses)) 
+        file.write("p cnf {} {}\n".format(count_of_sub_sets, count_of_CNF_clauses))
 
         for clause in CNF:
 
@@ -91,7 +92,7 @@ def clauses_for_max_k(count_of_sizes, k):
 def define_sets(n, all_numbers_of_collection_set):
 
     try:
-        
+       
         U = list(range(1, n + 1))
         S = []
         sub_set = []
@@ -116,7 +117,7 @@ def define_sets(n, all_numbers_of_collection_set):
             elif char == semi_column:
 
                 if range_v:
-                    for i in range(int(lastNum),int(num)):sub_set.append(i)
+                    for i in range(int(lastNum),int(num)+1):sub_set.append(i)
 
                 sub_set.append(int(num))
                 S.append(sub_set)
@@ -134,18 +135,19 @@ def define_sets(n, all_numbers_of_collection_set):
                 num = ""
                 range_v = True
                 sub_set_tag += char
-            
+           
             else:
                 num += char
                 sub_set_tag += char
 
         return U, S,False
-    
+   
     except Exception:
         return [],[],True
 
 
 def process_arguments():
+    global statistics
 
     args = parser.parse_args()
 
@@ -158,12 +160,13 @@ def process_arguments():
             find_best = input_text[2]
             k =  input_text[3]
             header =  input_text[4]
+            statistics = input_text[5]
 
             n = int(n)
             k = int(k)
 
             return n, all_numbers_of_collection_set, k, find_best,header,False
-    
+   
     except Exception:
 
         print("WRONG INPUT")
@@ -173,7 +176,7 @@ def get_tries(S,find_best,k):
 
     if find_best == no_const:
         return k
-    
+   
     else:
         return len(S)
 
@@ -211,7 +214,7 @@ def start_program(S,find_best,header,k):
 
         tries -= 1
         k += 1
-    
+   
     if tries == 0:
         print("NO SOLUTION FOR THIS TASK!!!")
 
@@ -228,7 +231,7 @@ if __name__ == '__main__':
     error_k = False
 
     if not error_int:
-        
+       
         if k > len(S):
             print("WRONG INPUT")
             error_k = True
@@ -236,10 +239,10 @@ if __name__ == '__main__':
 
         if not error and not error_int and not error_k and ((find_best == no_const or find_best == yes_const) and (header == no_const or header == yes_const)):
             start_program(S,find_best,header,k)
-            
+           
         elif (not error and not error_int and not error_k):
             print("WRONG INPUT")
-    
+   
     end_time = time.time()
 
     delta_time = end_time - start_time
