@@ -109,7 +109,7 @@ Při úspšněm výstupu dostaneme seznam množin, které byly vybrány pro pokr
 
 SELECTED SUBSETS: { S_1 S_4 }
 
-COUNT OF SUBSETS 2
+COUNT OF SUBSETS: 2
 
 TIME IN SECONDS: 0.01
 
