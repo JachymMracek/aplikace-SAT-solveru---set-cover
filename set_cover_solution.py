@@ -237,7 +237,7 @@ if __name__ == '__main__':
             error_k = True
 
 
-        if not error and not error_int and not error_k and ((find_best == no_const or find_best == yes_const) and (header == no_const or header == yes_const)):
+        if not error and not error_int and not error_k):
             start_program(S,find_best,header,k)
            
         elif (not error and not error_int and not error_k):
