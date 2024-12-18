@@ -37,10 +37,13 @@ python script přijímá pouze jeden argument z příkazové řádky, kterým je
  Uživatel si může zvolit zda chce najít nejlepší k nebo program spustit pro zadané k, pokud uživatel napíše "yes", pak aplikace hledá nejlepší k a nebere zřetel na zvolené k. Pokud uživatel nechce hledat nejlepší k, pak napište "no".
   
  #### "header"
- Napsáním "yes" uživatel uvidí CNF formule a statistiky výpočtu SAT solveru, pokud napíše "no", pak se CNF formule a statistiky nezobrazí na standartní výstup.
+ Napsáním "yes" uživatel uvidí CNF formule, pokud napíše něco jiného, pak se CNF formule nezobrazí na standartní výstup.
+
+  #### "statistics"
+  Napsáním "yes" uživatel uvidí statistiky výpočtu SAT solveru na standartním výstupu, jiným vstupním textem se statistiky nevypíší.
 
 ### Ukázkový vstup v souboru
-50000 1,2-50;51-50000; no 2 no
+50000 1,2-50;51-50000; no 2 no no
 
 ### Ukázkové spuštení na příkazové řádce
 python3 SAT_set_cover_solution.py instance1.txt
