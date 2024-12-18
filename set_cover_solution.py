@@ -173,12 +173,12 @@ def process_arguments():
         return [],[],[],[],[],True
 
 def get_tries(S,find_best,k):
-
-    if find_best == no_const:
-        return k
+   
+    if find_best == yes_const:
+        return len(S)
    
     else:
-        return len(S)
+        return k
 
 
 def show_solution(SAT_solution,S,k,U):
@@ -237,7 +237,7 @@ if __name__ == '__main__':
             error_k = True
 
 
-        if not error and not error_int and not error_k):
+        if not error and not error_int and not error_k:
             start_program(S,find_best,header,k)
            
         elif (not error and not error_int and not error_k):
