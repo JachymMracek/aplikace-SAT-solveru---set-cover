@@ -46,7 +46,7 @@ python script přijímá pouze jeden argument z příkazové řádky, kterým je
   Uživatel musí zadat cestu, kde má uložený glucose-syrup soubor.
 
 ### Ukázkový vstup v souboru
-50000 1,2-50;51-50000; no 2 no no
+10000 1-10000; no 1 no no /home/liveuser/aplikace-SAT-solveru---set-cover/glucose-syrup
 
 ### Ukázkové spuštení na příkazové řádce
 python3 SAT_set_cover_solution.py instance1.txt
@@ -62,7 +62,7 @@ v popisu zadání.
 Je přiložena jedna nesplnitelná instance unsatisfiable.txt.
 
 ### Instance ( > 10 sekund )
-Příkladem je instance10.txt.
+Příkladem je instance6.txt.
 
 ## Postup řešení
 CNF formuli jsme vytvořili ze 2 částí.
