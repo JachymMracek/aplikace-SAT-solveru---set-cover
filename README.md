@@ -130,6 +130,8 @@ TIME IN SECONDS: 0.01
 ## Experiment
 ![](graph.png)
 
-Graf závislosti počtu vybraných podmnožin instancí instance1.txt až instance10.txt (kde instance mají podmnožiny rozdelené rovnoměrné) na čase. Kde hodnoty na ose y jsou v sekundách a zaokrouhleny na celá čísla. Všimneme si, že náš program se chová lineárně pro naše charakteristikcé vstupní soubory instance1.txt až instance10.txt.
+Graf závislosti naměřených hodnot času programu na jednotlivých instancích (instance1.txt až instance9.txt) ukazuje, že instance10.txt již trvala příliš dlouho. Proto usuzujeme, že je vhodné zadávat hodnoty n ve vstupních souborech maximálně na úrovni instance9.txt, pokud chceme, aby výpočet trval méně než 30 minut. Křivka je očekávaně rostoucí.
+
+Naměřené hodnoty jsou v sekundách: 0.19, 1.75, 4.93, 10.13, 16.55, 25.28, 35.49, 493.54, 4625
 
                                      
