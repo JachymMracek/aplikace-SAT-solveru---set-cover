@@ -232,12 +232,15 @@ if __name__ == '__main__':
 
     error_k = False
     
-    if not os.path.exists(pathGLucose) and not error_int and not error or  not pathGLucose.endswith("glucose-syrup"):
+    if not os.path.exists(pathGLucose):
+        print("-----------------------")
         print("Wrong path to glocose-syrup file. PLease, check your input file and change file path. Look in to documentation.")
+        print("-----------------------")
+        error_int = True
 
-    elif not error_int:
+    if not error_int:
        
-        if k > len(S) and find_best != "yes":
+        if k > len(S):
             print("WRONG INPUT")
             error_k = True
 

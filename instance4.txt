@@ -1,1 +1,1 @@
-50000 1-12500;12501-25000;25001-37500;37501-50000; no 4 no no
+70000 1-70000; no 1 no no /home/liveuser/aplikace-SAT-solveru---set-cover/glucose-syrup
