@@ -130,7 +130,7 @@ TIME IN SECONDS: 0.01
 ## Experiment
 ![](graph.png)
 
-Graf závislosti naměřených hodnot času programu na jednotlivých instancích (instance1.txt až instance9.txt, instance10.txt již trvala příliš dlouho). Proto usuzujeme, že je vhodné zadávat hodnoty n ve vstupních souborech maximálně na úrovni instance9.txt, pokud chceme, aby výpočet trval méně než 30 minut. Křivka je očekávaně rostoucí.
+Graf závislosti naměřených hodnot času programu na jednotlivých instancích (instance1.txt až instance9.txt, instance10.txt již trvala příliš dlouho). Proto usuzujeme, že je vhodné zadávat hodnoty n ve vstupních souborech maximálně na úrovni instance9.txt, pokud chceme, aby výpočet trval méně než 80 minut. Křivka je očekávaně rostoucí.
 
 Naměřené hodnoty jsou v sekundách: 0.19, 1.75, 4.93, 10.13, 16.55, 25.28, 35.49, 493.54, 4625
 
