@@ -233,7 +233,7 @@ if __name__ == '__main__':
     error_k = False
     
     if not os.path.exists(pathGLucose) and not error_int and not error or  not pathGLucose.endswith("glucose-syrup"):
-        print("Wrong path to glocose-syrup file. PLease, check your input file and change file path. Look in to documentation.")
+        print("WRONG PATH TO GLOCLOSE-SYRUP FILE. PLEASE, CHECK YOUR INPUT FILE AND CHANGE FILE PATH. LOOK INTO DOCUMENTATION.")
 
     elif not error_int:
        
