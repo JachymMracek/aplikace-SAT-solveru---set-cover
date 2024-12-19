@@ -51,9 +51,6 @@ python script přijímá pouze jeden argument z příkazové řádky, kterým je
 ### Ukázkové spuštení na příkazové řádce
 python3 SAT_set_cover_solution.py instance1.txt
 
-### Poznámka
-Nejspíše bude nutné zadat absolutní cestu glucose-syrup do příkazu glucose_path = os.path.expanduser("glucose-syrup") místo "glucose-syrup".
-
 ## Instance
 Jsou přiloženy instance v textových souborech, kde instance1.txt až instance10.txt a wkipedie_instance.txt jsou splnitelné a instance unsatisfiable.txt je nesplnitelná.
 
