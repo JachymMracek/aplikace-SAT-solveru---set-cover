@@ -104,8 +104,12 @@ WRONG INPUT
 
 TIME IN SECONDS: 0.0
 
-### Chybná cesta glucose-syrup soubor
+### Chybná cesta glucose-syrup souboru
 Pokud uživatel zadal v input souboru chybnou cestu k glucose-syrup souboru, pak se zobrazí chybová hláška. (Zadejte případně absolutní cestu)
+
+Wrong path to glocose-syrup file. PLease, check your input file and change file path. Look in to documentation.
+
+TIME IN SECONDS: 0.0
 
 ### Úspěšný výstup
 Při úspšněm výstupu dostaneme seznam množin, které byly vybrány pro pokrytí množiny U s počtem vybraných podmnožin.Kde S_i jsou množiny ve tvaru zadané ve vstupním souboru. Příkladem uveďme S_1 je {1,2;} a S_2 je {3-5;} pak výsledkem je { 1,2; 3-5; }.
