@@ -42,6 +42,9 @@ python script přijímá pouze jeden argument z příkazové řádky, kterým je
   #### "statistics"
   Napsáním "yes" uživatel uvidí statistiky výpočtu SAT solveru na standartním výstupu, jiným vstupním textem se statistiky nevypíší.
 
+  #### "glucose-syrup path"
+  Uživatel musí zadat cestu, kde má uložený glucose-syrup soubor.
+
 ### Ukázkový vstup v souboru
 50000 1,2-50;51-50000; no 2 no no
 
