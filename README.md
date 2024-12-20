@@ -105,7 +105,7 @@ WRONG INPUT
 TIME IN SECONDS: 0.0
 
 ### Chybná cesta glucose-syrup souboru
-Pokud uživatel zadal v input souboru chybnou cestu glucose-syrup souboru, pak se zobrazí chybová hláška. (Zadejte případně absolutní cestu)
+Pokud uživatel zadal v input souboru chybnou cestu glucose-syrup souboru, pak se zobrazí chybová hláška. (Zadejte případně absolutní cestu - Bude potřeba i pro přiložené instance)
 
 WRONG PATH TO GLOCLOSE-SYRUP FILE. PLEASE, CHECK YOUR INPUT FILE AND CHANGE FILE PATH. LOOK INTO DOCUMENTATION.
 
