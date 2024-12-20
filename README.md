@@ -34,7 +34,7 @@ python script přijímá pouze jeden argument z příkazové řádky, kterým je
  Maximální počet podmnožin, které splňují zadání. Program hledá splnitelné řešení pro 1,...k. Pokud uživatel nenastaví find_best na "yes", pak tento parametr nemá význam v aplikaci.
  
  #### "find_best"
- Uživatel si může zvolit zda chce najít nejlepší k nebo program spustit pro zadané k, pokud uživatel napíše "yes", pak se hledá řešení pro nejlepší k, v opačném případě se hledá nejlepší k.
+ Uživatel si může zvolit zda chce najít nejlepší k nebo program spustit pro zadané k, pokud uživatel napíše "yes", pak se hledá řešení pro nejlepší k, v opačném případě se hledá pro zadané k.
   
  #### "header"
  Napsáním "yes" uživatel uvidí CNF formule, pokud napíše něco jiného, pak se CNF formule nezobrazí na standartní výstup.
