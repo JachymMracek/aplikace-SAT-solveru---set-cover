@@ -52,7 +52,7 @@ python script přijímá pouze jeden argument z příkazové řádky, kterým je
 python3 SAT_set_cover_solution.py instance1.txt
 
 ## Instance
-Jsou přiloženy instance v textových souborech, kde instance1.txt až instance7.txt a wkipedie_instance.txt jsou splnitelné a instance unsatisfiable.txt je nesplnitelná.
+Jsou přiložené instance v textových souborech, kde instance1.txt až instance7.txt a wkipedie_instance.txt jsou splnitelné a instance unsatisfiable.txt je nesplnitelná.
 
 ### Splnitelné instance
 Jsou přiloženy instance 1 až 7 (instace1.txt až instace7.txt), které jsou splnitelné a také slouží k měření času naší aplikace. (viz experiment část). A také je přiložená splnitelná wikipedie_instance.txt z wikipedie zdroje napsaný
