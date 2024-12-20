@@ -46,7 +46,7 @@ python script přijímá pouze jeden argument z příkazové řádky, kterým je
   Uživatel musí zadat cestu, kde má uložený glucose-syrup soubor.
 
 ### Ukázkový vstup v souboru
-10000 1-10000; no 1 no no /home/liveuser/aplikace-SAT-solveru---set-cover/glucose-syrup
+10000 1,2-10000; no 1 no no /home/liveuser/aplikace-SAT-solveru---set-cover/glucose-syrup
 
 ### Ukázkové spuštení na příkazové řádce
 python3 SAT_set_cover_solution.py instance1.txt
