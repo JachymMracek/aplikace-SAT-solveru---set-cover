@@ -52,7 +52,7 @@ python script přijímá pouze jeden argument z příkazové řádky, kterým je
 python3 SAT_set_cover_solution.py instance1.txt
 
 ## Instance
-Jsou přiloženy instance v textových souborech, kde instance1.txt až instance10.txt a wkipedie_instance.txt jsou splnitelné a instance unsatisfiable.txt je nesplnitelná.
+Jsou přiloženy instance v textových souborech, kde instance1.txt až instance7.txt a wkipedie_instance.txt jsou splnitelné a instance unsatisfiable.txt je nesplnitelná.
 
 ### Splnitelné instance
 Jsou přiloženy instance 1 až 10 (instace1.txt až instace10.txt), které jsou splnitelné a také slouží k měření času naší aplikace. (viz experiment část). A také je přiložená splnitelná wikipedie_instance.txt z wikipedie zdroje napsaný
@@ -62,7 +62,7 @@ v popisu zadání.
 Je přiložena jedna nesplnitelná instance unsatisfiable.txt.
 
 ### Instance ( > 10 sekund )
-Příkladem je instance6.txt.
+Příkladem je instance3.txt.
 
 ## Postup řešení
 CNF formuli jsme vytvořili ze 2 částí.
@@ -130,8 +130,16 @@ TIME IN SECONDS: 0.01
 ## Experiment
 ![](graph.png)
 
-Graf závislosti naměřených hodnot času programu na jednotlivých instancích (instance1.txt až instance9.txt, instance10.txt již trvala příliš dlouho). Proto usuzujeme, že je vhodné zadávat hodnoty n ve vstupních souborech maximálně na úrovni instance9.txt, pokud chceme, aby výpočet trval méně než 80 minut. Křivka je očekávaně rostoucí.
+Graf závislosti zvoleného n na času výpočtu programu, kde osa x je logaritmická a osa y je v seknudách. Experimentem sjme zjistili, že pokud by uživatel chtěl znát řešení do 80 minut, pak by měl zvolit stejn, n jako v instanci instance6.txt. Instance7.txt trvala už příliš dlouho. Dle předpokladu, graf je roustoucí.
 
-Naměřené hodnoty jsou v sekundách: 0.19, 1.75, 4.93, 10.13, 16.55, 25.28, 35.49, 493.54, 4625
+| n        | t        |
+|----------|----------|
+| 10000    | 0.38     |
+| 50000    | 9.97     |
+| 100000   | 40.4     |
+| 200000   | 164.83   |
+| 400000   | 622.01   |
+| 1500000  | 4625.25  |
+
 
                                      
