@@ -130,7 +130,7 @@ TIME IN SECONDS: 0.01
 ## Experiment
 ![](graph.png)
 
-Pokud by uživatel chtěl znát řešení do 80 minut, měl by zvolit velikost n odpovídající instanci instance6.txt, protože výpočet u této instance se vešel do požadovaného času. Instance instance7.txt už trvala příliš dlouho. Graf závislosti času výpočtu na velikosti n ukazuje, že čas roste s rostoucím n. Graf má logaritmickou osu x (velikost n) a osu y v sekundách (čas výpočtu). Jednotlivé naměřené instance jsou v instance1.txt až instance6.txt.
+Pokud by uživatel chtěl znát řešení do 80 minut, měl by zvolit velikost n odpovídající instanci instance6.txt, protože výpočet u této instance se vešel do požadovaného času. Instance instance7.txt už trvala příliš dlouho. Graf závislosti času výpočtu na velikosti n ukazuje, že čas roste s rostoucím n. Vodorvná osa je v hodnotách zvoleného n v 1e6 formě a svislá osa je v sekundách (čas výpočtu). Jednotlivé naměřené instance jsou v instance1.txt až instance6.txt.
 
 | n        | t        |
 |----------|----------|
