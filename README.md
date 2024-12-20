@@ -28,7 +28,7 @@ python script přijímá pouze jeden argument z příkazové řádky, kterým je
  číslo, které udává počet prvků v množině U, která obsahuje prvky 1 až n.
  
  #### "subsets"
- String reprezentující množinu obsahující číselné podmnožiny, kde prvky v podmnožině mohou obsahovat pouze čísla, které musejí být oddělené čárkou (",") nebo pomlčkou ("-"), která určuje rozsah platných čísel v podmnožině. Jednotlivé podmnožiny musejí být ukončené středníkem (";"), tedy i poslední. Prázdná množina v našem případě je brána, jako chybný vstup, jelikož nemá žádný vliv na naší úlohu.
+ String reprezentující množinu obsahující číselné podmnožiny, kde prvky v podmnožině mohou obsahovat pouze čísla, které musejí být oddělené čárkou (",") značící další číslo nebo pomlčkou ("-"), která určuje rozsah uvažovaných čísel v podmnožině. Jednotlivé podmnožiny musejí být ukončené středníkem (";"), tedy i poslední. Prázdná množina v našem případě je brána, jako chybný vstup, jelikož nemá žádný vliv na naší úlohu.
 
   #### "k"
  Maximální počet podmnožin, které splňují zadání. Program hledá splnitelné řešení pro 1,...k. Pokud uživatel nastaví find_best na "yes", pak tento parametr nemá význam v aplikaci.
