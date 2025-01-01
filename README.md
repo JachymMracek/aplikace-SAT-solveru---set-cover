@@ -49,7 +49,7 @@ python script přijímá pouze jeden argument z příkazové řádky, kterým je
 10000 1,2-10000; no 1 no no /home/liveuser/aplikace-SAT-solveru---set-cover/glucose-syrup
 
 ### Ukázkové spuštení na příkazové řádce
-python3 SAT_set_cover_solution.py instance1.txt
+python3 set_cover_solution.py instance1.txt
 
 ## Instance
 Jsou přiložené instance v textových souborech, kde instance1.txt až instance7.txt a wkipedie_instance.txt jsou splnitelné a instance unsatisfiable.txt je nesplnitelná.
