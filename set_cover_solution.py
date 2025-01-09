@@ -118,7 +118,7 @@ def define_sets(n, all_numbers_of_collection_set):
             elif char == semi_column:
 
                 if range_v:
-                    for i in range(int(lastNum),int(num)+1):sub_set.append(i)
+                    for i in range(int(lastNum),int(num)):sub_set.append(i)
 
                 sub_set.append(int(num))
                 S.append(sub_set)
